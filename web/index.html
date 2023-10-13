@@ -5,14 +5,15 @@
         <link rel="stylesheet" href="index.css">
         <title>Sleep Timer</title>
     </head>
-    <body>
-        <button class="ui_button" onclick="set_shutdown_timer(1800)">0:30</button>
-        <button class="ui_button" onclick="set_shutdown_timer(3600)">1:00</button>
-        <button class="ui_button" onclick="set_shutdown_timer(5400)">1:30</button>
-        <button class="ui_button" onclick="set_shutdown_timer(7200)">2:00</button>
-        <button class="ui_button" onclick="set_shutdown_timer(9000)">2:30</button>
-        <button class="ui_button" onclick="set_shutdown_timer(10800)">3:00</button>
-        <button class="ui_button" onclick="cancel_shutdown_timer()">Cancel</button>
+    <body onload="OnLoad()">
+        <input class="ui_input" id="ui_input" disabled>
+        <button class="ui_button" onclick="SetShutdownTimer(1800)">0:30</button>
+        <button class="ui_button" onclick="SetShutdownTimer(3600)">1:00</button>
+        <button class="ui_button" onclick="SetShutdownTimer(5400)">1:30</button>
+        <button class="ui_button" onclick="SetShutdownTimer(7200)">2:00</button>
+        <button class="ui_button" onclick="SetShutdownTimer(9000)">2:30</button>
+        <button class="ui_button" onclick="SetShutdownTimer(10800)">3:00</button>
+        <button class="ui_button" onclick="CancelShutdownTimer()">Cancel</button>
     </body>
 </html>
 
